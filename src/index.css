@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root{
+  --clr-purple: hsl(259, 100%, 65%);
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-100: hsl(0, 0%, 94%);
+  --clr-grey-200: hsl(0, 0%, 86%);
+  --clr-grey-300: hsl(0, 1%, 44%);
+  --clr-black: hsl(0, 0%, 8%);
+}
+
+*,
+::after,
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  background-color: var(--clr-grey-200);
+}
+
+.wrapper{
+  width: 58rem;
+  padding: 5rem 5rem;
+  background: var(--clr-white);
+  border-radius: 3rem;
+  border-bottom-right-radius: 14rem;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.form{
+  justify-content: flex-start;
+  gap: 3rem;
+  border-bottom: 1px solid var(--clr-grey-200);
+  padding-bottom: 2.4rem;
+}
+
+.form .inputs{
+  flex-direction: column;
+}
+
+.form label{
+  display: inline-block;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  width: 10rem;
+  text-align: start;
+  color: var(--clr-grey-300);
+}
+
+.form input{
+  max-width: 10rem;
+  padding: 1rem .4rem 1rem 1.2rem;
+  border: 1px solid var(--clr-grey-200);
+  border-radius: .3rem;
+  margin-top: .3rem;  
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  transition: .33s;
+}
+
+.form input::placeholder{
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+.form input:hover{
+  border: 1px solid var(--clr-purple);
+}
+
+.result{
+  text-align: left;
+  padding-top: 2.5rem;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-size: 7rem;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: -1rem;
+}
+
+h1 span{
+  color: var(--clr-purple);
+}
+
+
+.btn{
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--clr-purple);
+  position: absolute;
+  cursor: pointer;
+
+  right: 5rem;
+  top: 11rem;
+  transition: .33s;
+}
+
+.btn svg{
+  width: 3rem;
+}
+
+.btn:hover{
+  background-color: var(--clr-black);
+}
